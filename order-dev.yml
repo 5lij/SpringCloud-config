@@ -1,6 +1,11 @@
 spring:
   application:
     name: order
+  rabbitmq:
+    host: 192.168.119.145
+    port: 5672
+    username: guest
+    password: guest
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
@@ -19,4 +24,4 @@ server:
 ITEM:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
-env: dev9
+env: dev
